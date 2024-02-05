@@ -4,10 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="image">
+
+    </div>
+    <form action="#" method="post">
+        <section class="top">
+            <p>The moonlight danced on the rippling waters, casting a mesmerizing glow. In the quietude of the night, whispers of the wind carried tales of forgotten dreams. Underneath the canvas of stars, a symphony of silence unfolded.</p>
+            <p>You know you want to.</p>
+        </section>
+        <section class="main">
+            <h1>Let's do this!</h1>
+            <p>
+                Required fields are followed by <strong><span aria-label="required">*</span></strong>
+            </p>
+            <p>
+                <label for="first_name">
+                    <span>FIRST NAME:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="user_first_name" id="first_name" required>
+            </p>
+            <p>
+                <label for="last_name">
+                    <span>LAST NAME:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="user_last_name" id="last_name" required>
+            </p>
+            <p>
+                <label for="email">
+                    <span>EMAIL:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="email" name="user_email" id="email" required>
+            </p>
+            <p>
+                <label for="phone">
+                    <span>PHONE NUMBER:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="tel" name="user_phone" id="phone" required>
+            </p>
+            <p>
+                <label for="pwd">
+                    <span>PASSWORD:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="user_password" id="pwd" required>
+            </p>
+            <p>
+                <label for="confirm_pwd">
+                    <span>CONFIRM PASSWORD:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="user_confirm_password" id="confirm_pwd" required>
+            </p>
+        </section>
+        <section class="bottom">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </section>
+    </form>
 </body>
 </html>
