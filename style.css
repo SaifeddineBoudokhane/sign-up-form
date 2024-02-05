@@ -1,3 +1,59 @@
 body{
+    display: flex;
     font-family: 'Roboto', sans-serif;
+}
+
+.image{
+    background-color: red;
+    height: 100vh;
+    width: 30vw;
+}
+
+/* FORM */
+form{
+    background-color: blue;
+    height: 100vh;
+    width: 70vw;
+}
+
+/* TOP */
+.top{
+    height: 35%;
+    padding: 0 4vw;
+    position: relative;
+    
+}
+.top div{
+    bottom: 0px;
+    position: absolute;
+}
+
+/* MAIN */
+.main{
+    background-color: green;
+    height: 30%;
+    padding: 2vw 4vw;
+}
+h1{
+    font-size: 2.5vw;
+    font-weight: 450;
+}
+h1+p{
+    font-size: 1.5vw;
+    padding: 1.5vw 0;
+}
+h1+p>strong{
+    font-size: 2vw;
+    font-weight: 800;
+    color: red;
+}
+.main > div{
+    display: flex;
+    width: 50%;
+}
+
+/* BOTTOM */
+.bottom{
+    height: 35%;
+    padding: 0 4vw;
 }
