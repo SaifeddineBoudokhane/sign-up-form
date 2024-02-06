@@ -1,23 +1,43 @@
 :root{
-    --color-gray:#E5E7EB;
-    --color-white:white;
     --color-blue:rgb(49, 49, 255);
-    --color-red:rgb(232, 0, 0);
-    --color-light-green:#5cc400;
     --color-dark-green:#708e56;
+    --color-gray:#E5E7EB;
+    --color-light-green:#5cc400;
+    --color-red:rgb(232, 0, 0);
+    --color-white:white;
 }
 
 body{
     display: flex;
     font-family: 'Roboto', sans-serif;
 }
-
+/* Image section */
 .image{
-    background-color: red;
+    background-image: url(resources/bridge.jpg);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     width: 30vw;
 }
+.logo{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    margin-top: 150px;
 
+}
+#logo-man{
+    filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(321deg) brightness(110%) contrast(110%);
+    width: 100px;
+}
+h2{
+    color: white;
+    margin: auto 0;
+    font-size: 80px;
+    font-family: 'Blaka Hollow', system-ui;
+}
 /* FORM */
 form{
     background-color: var(--color-gray);
@@ -30,17 +50,17 @@ form{
     height: 34%;
     padding: 0 30px;
     position: relative;
-    
 }
 .top div{
     bottom: 0px;
     position: absolute;
 }
 .top div p{
-    margin: 3vw 0;
     font-size: min(20px,2vw);
     font-weight: 400;
-    width: min(100%,650px);
+    margin: 3vw 0;
+    padding-right: 3vw;
+    width: 500px;
 }
 em{
     font-style: italic;
@@ -48,7 +68,7 @@ em{
 /* MAIN */
 .main{
     background-color: var(--color-white);
-    height: 32%;
+    height: fit-content;
     padding: 20px 30px;
 }
 h1{
@@ -60,20 +80,21 @@ h1+p{
     padding: 1vw 0;
 }
 h1+p>strong{
+    color: red;
     font-size: min(2vw,15px);
     font-weight: 800;
-    color: red;
 }
 .main > div{
     display: flex;
     width: 100%;
 }
 .main > div>p{
-    width: min(50%,300px);
     margin: 10px 0;
+    width: min(50%,300px);
 }
 .main > div>p>*{
     display: block;
+    margin-bottom: 5px;
 }
 label{
     font-size: 10px;
@@ -82,8 +103,9 @@ label>span{
     font-weight: 400;
 }
 input{
-    border-radius: 3px;
     border: 2px solid var(--color-gray);
+    border-radius: 3px;
+    margin-bottom: 15px;
 }
 input:focus{
     border: 0;
@@ -103,19 +125,19 @@ input.invalid{
 }
 button{
     background-color: var(--color-dark-green);
-    color: var(--color-white);
-    font-weight: 600;
-    font-size: 16px;
-    padding: 9px 40px;
     border: 0;
     border-radius: 5px;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px 40px;
 }
 button:hover{
     cursor: pointer;
 }
 .bottom>p{
-    margin:30px 0;
     font-size: 14px;
+    margin:30px 0;
 }
 a:link{
     color: var(--color-dark-green);
